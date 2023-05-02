@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Audio Recorder</title>
+    <link href="/app.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <!-- <a href="login.html">Login</a> -->
+
+    <form action="/logout?_method=DELETE" method="POST">
+      <button class="nav-link fw-bold py-1 px-0 btn p=3 btn-dark text-white" type="submit"  >Logout</button>
+
+    </form>
+    <div class="wrapper">
+
+
+    <div class="left-section">
+      <header>
+        <h1>Audio Recorder</h1>
+      </header>
+      <section class="main-controls">
+        <canvas class="visualizer" height="60px"></canvas>
+        <div id="buttons">
+          <button class="record">Record</button>
+          <button class="stop">Stop</button>
+          <!-- <button class="downloadall">Download all recordings</button>   -->
+        </div>
+      </section>
+
+      <section class="sound-clips">
+
+
+      </section>
+
+    </div>
+  
+ <!-- Edit 2 : Entire div element-->
+
+  
+    <div class="right-section">        
+      <header>
+        <h1>Sample Sentences</h1>
+      </header>
+
+      <section class="main-controls">
+        <canvas  height="60px"></canvas>
+        <div id="buttons">
+          <button class="language" data-language="hindi">Hindi</button>
+          <button class="language" data-language="english">English</button>
+          <button class="language" data-language="punjabi">Punjabi</button>
+     
+
+        </div>
+      </section>
+      <section class="sentences">
+        <p id="hindi-sentence">यह हिंदी में एक वाक्य है।</p>
+        <p id="english-sentence">This is a sentence in English.</p>
+        <p id="punjabi-sentence">ਇਹ ਪੰਜਾਬੀ ਵਿੱਚ ਇੱਕ ਸੈਂਟੰਸ ਹੈ।</p>
+      </section>
+
+
+    </div>    
+  
+  </div> 
+
+<!--
+    <label for="toggle">❔</label>
+    <input type="checkbox" id="toggle">
+    <aside>
+      <h2>Information</h2>
+
+      <p>Web dictaphone is built using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator.getUserMedia">getUserMedia</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder_API">MediaRecorder API</a>, which provides an easier way to capture Media streams.</p>
+
+      <p>Icon courtesy of <a href="http://findicons.com/search/microphone">Find Icons</a>. Thanks to <a href="http://soledadpenades.com/">Sole</a> for the Oscilloscope code!</p>
+    </aside>
+-->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>  -->
+
+    <script src="/app.js"></script>
+    
+
+
+  </body>
+</html>
